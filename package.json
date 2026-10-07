@@ -1,0 +1,28 @@
+{
+  "name": "lev-yaakov-coordinator-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "מערכת ליווי לרכזת: אפליקציית רשת אחת למחשב ולטלפון, עם שרת וסנכרון",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server/src/index.js",
+    "dev": "node --watch server/src/index.js",
+    "test": "node --test server/test/",
+    "seed": "node scripts/seed-db.js",
+    "scenario": "node scripts/real-world-scenario.js",
+    "test-api": "node scripts/test-api.js",
+    "test-e2e": "node scripts/e2e-test.js",
+    "sync-skill": "node scripts/sync-skill.js",
+    "create-user": "node scripts/create-user.js",
+    "setup-prod": "node scripts/setup-production.js",
+    "generate-icons": "node scripts/generate-icons.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}
